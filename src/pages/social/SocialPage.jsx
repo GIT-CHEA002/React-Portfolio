@@ -1,0 +1,8 @@
+function SocialPage() {
+  return (
+    <div>
+      <h1>This is Social Content</h1>
+    </div>
+  );
+}
+export default SocialPage;
