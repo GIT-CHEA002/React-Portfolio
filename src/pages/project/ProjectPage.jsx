@@ -1,34 +1,39 @@
+import ProjectCard from "../../components/ProjectCard";
 import SectionWrapper from "../../components/SectionWrapper";
 import Layout from "../../layout/Layout";
-function ProjectPage() {
-  const cards = [
-    { id: 1, color: "bg-red-400", title: "Card 1" },
-    { id: 2, color: "bg-blue-400", title: "Card 2" },
-    { id: 3, color: "bg-green-400", title: "Card 3" },
-    { id: 4, color: "bg-purple-400", title: "Card 4" },
-  ];
+function ProjectPage({ projects }) {
   return (
     <Layout>
       <SectionWrapper>
-          <div className="h-[400vh] relative">
-            {cards.map((card, index) => (
+        <div>
+          <h1 className="text-6xl lg:text-8xl font-bold pt-28">
+            My
+            <span className="px-4 text-purple-600 ">Best</span>Creations
+          </h1>
+          <h5 className=" mt-5 lg:w-[60%] text-wrap  tracking-wide  text-gray-600 font-semibold text-2xl">
+            Designing and Develoh5ing Robust and Stylish Web Applications for a
+            Decade and Counting
+          </h5>
+        </div>
+      </SectionWrapper>
+      <SectionWrapper>
+        <div
+          className="relative"
+          style={{ height: `${projects.length * 100}vh` }}
+        >
+          {projects.map((project, index) => {
+            return (
               <div
-                key={card.id}
-                className="sticky top-0 h-screen flex items-center justify-center"
+                className="sticky top-20 h-screen bg-white flex items-center justify-center"
                 style={{ zIndex: index + 1 }}
               >
-                {/* 👇 THIS is the actual card */}
-                <div className="w-[900px] h-[500px] rounded-2xl shadow-2xl bg-white p-6">
-                  <h1 className="text-2xl font-bold">{card.title}</h1>
-                </div>
+                <ProjectCard project={project} />
               </div>
-            ))}
+            );
+          })}
         </div>
-        
-   
       </SectionWrapper>
     </Layout>
   );
 }
-
 export default ProjectPage;

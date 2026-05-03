@@ -42,7 +42,7 @@ function App() {
       <Route path="/" element={<ProfilePage projects={projects} />} />
       <Route path="/contact" element={<Contactpage />} />
       <Route path="/social" element={<SocialPage />} />
-      <Route path="/project" element={<ProjectPage />} />
+      <Route path="/project" element={<ProjectPage projects={projects} />} />
       <Route path="/about" element={<AboutPage />} />
       {/* incorrect route */}
       <Route path="*" element={<NotFoundPage />} />
