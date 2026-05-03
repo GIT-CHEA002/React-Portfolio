@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import GetInTouch from "../../../components/button/GetInTouch";
+import BrowseProject from "../../../components/button/BrowseProject";
 function WelcomeText() {
   return (
     <div className="h-full flex items-center">
@@ -16,18 +17,8 @@ function WelcomeText() {
           </p>
         </div>
         <div className="mt-5 space-x-7 text-center lg:text-start">
-          <NavLink
-            to="/contact"
-            className="border py-2 px-4 shadow-sm bg-purple-700 text-white text-center font-semibold rounded rounded-2 hover:bg-purple-500  transition-colors duration-300"
-          >
-            <span className=" tracking-wide ">Get In Touch</span>
-          </NavLink>
-          <NavLink
-            to="/project"
-            className="border border-black  py-2 px-4 shadow-sm text-black text-center font-semibold rounded rounded-2 hover:text-white  hover:bg-black transition-colors duration-300"
-          >
-            <span className="tracking-wide">Browse Projects</span>
-          </NavLink>
+          <GetInTouch />
+          <BrowseProject />
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import StorySection from "./StorySection";
 function ProfilePage() {
   return (
     <Layout>
-      <div className="">
+      <div>
         <SectionWrapper>
           <HeroSection />
         </SectionWrapper>

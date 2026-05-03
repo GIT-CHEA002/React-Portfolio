@@ -1,12 +1,12 @@
-import Header from "../../components/Header/Header";
+import SectionWrapper from "../../components/SectionWrapper";
+import Layout from "../../layout/Layout";
 function ProjectPage() {
   return (
-    <>
-      <Header />
-      <div>
-        <h1>This is Project page</h1>
-      </div>
-    </>
+    <Layout>
+      <SectionWrapper>
+        <h1>This is project page</h1>
+      </SectionWrapper>
+    </Layout>
   );
 }
 

@@ -1,13 +1,12 @@
-import Header from "../../components/Header/Header";
+import SectionWrapper from "../../components/SectionWrapper";
+import Layout from "../../layout/Layout";
 function Contactpage() {
   return (
-    <>
-      <Header />
-      <div>
+    <Layout>
+      <SectionWrapper>
         <h1>This is contact page</h1>
-      </div>
-    </>
+      </SectionWrapper>
+    </Layout>
   );
 }
-
 export default Contactpage;

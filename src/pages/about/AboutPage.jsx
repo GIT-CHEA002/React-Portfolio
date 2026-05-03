@@ -1,11 +1,11 @@
+import SectionWrapper from "../../components/SectionWrapper.jsx";
 import Layout from "../../layout/Layout.jsx";
 function AboutPage() {
   return (
     <Layout>
-      <div className="w-full h-screen">
+      <SectionWrapper>
         <h1>This is about page</h1>
-        
-      </div>
+      </SectionWrapper>
     </Layout>
   );
 }
