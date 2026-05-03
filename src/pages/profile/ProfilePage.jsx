@@ -5,7 +5,7 @@ import HeroSection from "./hero/HeroSection";
 import ProjectSection from "./projectcardsection/ProjectSection";
 import Skills from "./SkillsSection";
 import StorySection from "./StorySection";
-function ProfilePage() {
+function ProfilePage({ projects }) {
   return (
     <Layout>
       <div>
@@ -14,7 +14,7 @@ function ProfilePage() {
         </SectionWrapper>
 
         <SectionWrapper>
-          <ProjectSection />
+          <ProjectSection projects={projects} />
         </SectionWrapper>
 
         <SectionWrapper>
