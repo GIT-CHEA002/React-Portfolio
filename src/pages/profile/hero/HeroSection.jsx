@@ -2,7 +2,7 @@ import HeroImage from "../../../components/HeroImage";
 import WelcomeText from "./WelcomeText";
 function HeroSection() {
   return (
-    <div className="w-full h-screen grid grid-cols-1 lg:grid-cols-2 ">
+    <div className="w-full h-screen grid grid-cols-1 lg:grid-cols-2 mb-5  ">
       {/* welcome text */}
       <div className=" lg:order-1 order-2">
         <WelcomeText />
