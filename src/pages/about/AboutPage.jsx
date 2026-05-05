@@ -1,4 +1,3 @@
-import LeadingTitle from "../../components/LeadingTitle.jsx";
 import SectionWrapper from "../../components/SectionWrapper.jsx";
 import Story from "../../components/Story.jsx";
 import Layout from "../../layout/Layout.jsx";
@@ -13,19 +12,17 @@ function AboutPage({ storys, skills, jobs }) {
       <SectionWrapper>
         <GreetingMessageSection />
       </SectionWrapper>
-      {/* stack and skill  */}
+
       <SectionWrapper>
         <StackAndPlaceSection skills={skills} />
       </SectionWrapper>
+
       <SectionWrapper>
         <Story storys={storys} />
       </SectionWrapper>
-      {/* Experience section */}
+
       <SectionWrapper>
-        <LeadingTitle text={"My Experiences"} />
-        <div className=" mt-10 ">
-          <ExperiencesItemSection jobs={jobs} />
-        </div>
+        <ExperiencesItemSection jobs={jobs} />
       </SectionWrapper>
     </Layout>
   );

@@ -1,10 +1,10 @@
-// import { useRef } from "react";
-// import { motion, useScroll, useSpring } from "framer-motion";
+import LeadingTitle from "../../../components/LeadingTitle";
 import ExperienceRow from "./ExperienceRow";
 
 function ExperiencesItemSection({ jobs }) {
   return (
     <div className="mt-10">
+      <LeadingTitle text={"My Experiences"} />
       {jobs &&
         jobs.map((job, index) => {
           return <ExperienceRow job={job} index={index} />;
