@@ -9,7 +9,7 @@ function Footer() {
     "text-gray-600 text-2xl font-bold hover:text-purple-700 transition-colors duration-300 ease-in-out";
   return (
     <>
-      <footer className="mx-auto w-full h-auto px-4 sm:px-6 md:px-24 py-6 ">
+      <footer className="mx-auto w-full h-auto px-4 sm:px-6 md:px-16 py-6 ">
         {/*navigation section  */}
         <NavigationFooter
           footerLinkClass={footerLinkClass}

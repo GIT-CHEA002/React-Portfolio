@@ -9,7 +9,7 @@ function Contactpage() {
     <Layout>
       <title>Contact</title>
       <SectionWrapper>
-        <div className="w-full items-center h-screen grid grid-cols-1  lg:grid-cols-2 ">
+        <div className="w-full items-center h-full grid grid-cols-1  lg:grid-cols-2 ">
           <div className=" lg:order-1 order-2 ">
             <LeadingTitle text={"Get In Touch"} />
             <h1 className="text-gray-600 text-2xl text-wrap font-medium">

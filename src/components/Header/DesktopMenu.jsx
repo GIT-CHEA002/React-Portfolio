@@ -4,7 +4,7 @@ import { GrContact } from "react-icons/gr";
 
 function DesktopMenu({ navLinkClass, setMobileMenu, mobileMenu }) {
   return (
-    <div className="mx-auto w-full h-auto px-4 sm:px-6 md:px-24 py-3 ">
+    <div className="mx-auto w-full h-auto px-4 sm:px-6 md:px-16 py-3 ">
       <div className="flex items-center justify-between ">
         <div className="h-[50px] w-[50px] flex items-center">
           <div className=" text-3xl font-bold text-black  ">
