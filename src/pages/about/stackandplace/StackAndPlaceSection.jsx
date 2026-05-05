@@ -1,4 +1,4 @@
-import DottedGlobe from "./Map";
+import DottedGlobe from "./DottedGlobe";
 import MyStack from "./MyStack";
 function StackAndPlaceSection({ skills }) {
   return (
