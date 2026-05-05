@@ -1,19 +1,19 @@
 import { GiCheckMark } from "react-icons/gi";
-function JobDetails({ Jobs, activeJob }) {
+function JobDetails({ jobs, activeJob }) {
   return (
     <div className=" flex-1  space-y-2">
       <h1 className=" text-3xl text-gray-800 font-bold tracking-wide">
-        {Jobs[activeJob].title}
+        {jobs[activeJob].title}
         <span className=" text-purple-600 ms-2">
-          @{Jobs[activeJob].company}
+          @{jobs[activeJob].company}
         </span>
       </h1>
       <h1 className=" text-gray-600 text-base font-semibold mb-12">
-        {Jobs[activeJob].date}
+        {jobs[activeJob].date}
       </h1>
       <div className=" pt-4">
         <ul className="space-y-4 ">
-          {Jobs[activeJob].bullets.map((bullet, index) => {
+          {jobs[activeJob].bullets.map((bullet, index) => {
             return (
               <li key={index} className="flex lg:items-center">
                 <GiCheckMark className="text-purple-700  me-2 text-2xl lg:text-3xl" />

@@ -1,13 +1,14 @@
 import SectionWrapper from "../../components/SectionWrapper";
 import Layout from "../../layout/Layout";
-import Experiences from "./experiences/ExperiencesSection";
+import ExperiencesSection from "./experiences/ExperiencesSection";
 import HeroSection from "./hero/HeroSection";
 import ProjectSection from "./projectcardsection/ProjectSection";
-import Skills from "./SkillsSection";
+import SkillSection from "./SkillsSection";
 import StorySection from "./StorySection";
-function ProfilePage({ projects }) {
+function ProfilePage({ projects, storys, skills, jobs }) {
   return (
     <Layout>
+      <title>Home Page</title>
       <div>
         <SectionWrapper>
           <HeroSection />
@@ -18,14 +19,14 @@ function ProfilePage({ projects }) {
         </SectionWrapper>
 
         <SectionWrapper>
-          <Experiences />
+          <ExperiencesSection jobs={jobs} />
         </SectionWrapper>
 
         <SectionWrapper>
-          <Skills />
+          <SkillSection skills={skills} />
         </SectionWrapper>
         <SectionWrapper>
-          <StorySection />
+          <StorySection storys={storys} />
         </SectionWrapper>
       </div>
     </Layout>

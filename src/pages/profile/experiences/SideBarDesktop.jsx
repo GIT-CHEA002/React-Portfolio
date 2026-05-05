@@ -1,7 +1,7 @@
-function SideBarDesktop({ Jobs, setActiveJob, activeJob }) {
+function SideBarDesktop({ jobs, setActiveJob, activeJob }) {
   return (
     <div className=" hidden lg:flex flex-col border-l-2 border-gray-600 my-3 pe-7 ">
-      {Jobs.map((job, index) => {
+      {jobs.map((job, index) => {
         return (
           <button
             key={index}

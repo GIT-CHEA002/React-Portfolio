@@ -1,35 +1,6 @@
 import { Fragment } from "react";
 import LeadingTitle from "../../components/LeadingTitle";
-const skills = [
-  {
-    category: "Web Design",
-    items: [
-      "UI/UX Design",
-      "Responsive Design",
-      "Wireframing",
-      "User Research",
-    ],
-  },
-  {
-    category: "Frontend",
-    items: ["JavaScript", "ReactJS", "NextJS", "CSS3"],
-  },
-  {
-    category: "Backend",
-    items: ["NodeJS", "MongoDB", "ExpressJS", "Vercel"],
-  },
-  {
-    category: "Soft Skills",
-    items: [
-      "Effective communication",
-      "Collaboration",
-      "Commitment",
-      "Leadership",
-    ],
-  },
-];
-
-function Skills() {
+function SkillSection({skills}) {
   return (
     <Fragment>
       <LeadingTitle text={"Skills"} />
@@ -42,9 +13,9 @@ function Skills() {
                   {skill.category}
                 </h1>
                 <ul className=" font-semibold text-gray-600 tracking-wide text-xl cursor-pointer">
-                  {skill.items.map((item) => {
+                  {skill.items.map((item,i) => {
                     return (
-                      <li className=" hover:scale-105 transition-transform  duration-300 hover:text-purple-600">
+                      <li key={i} className=" hover:scale-105 transition-transform  duration-300 hover:text-purple-600">
                         {item}
                       </li>
                     );
@@ -57,4 +28,4 @@ function Skills() {
     </Fragment>
   );
 }
-export default Skills;
+export default SkillSection;
