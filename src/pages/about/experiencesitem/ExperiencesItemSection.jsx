@@ -7,7 +7,7 @@ function ExperiencesItemSection({ jobs }) {
       <LeadingTitle text={"My Experiences"} />
       {jobs &&
         jobs.map((job, index) => {
-          return <ExperienceRow job={job} index={index} />;
+          return <ExperienceRow key={index} job={job} index={index} />;
         })}
     </div>
   );
