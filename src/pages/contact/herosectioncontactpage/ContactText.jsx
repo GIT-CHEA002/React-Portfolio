@@ -1,5 +1,5 @@
 import { Mail, Phone } from "lucide-react";
-import LeadingTitle from "../../components/LeadingTitle";
+import LeadingTitle from "../../../components/LeadingTitle";
 
 function ContactText() {
   return (
