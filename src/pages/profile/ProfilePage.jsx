@@ -5,10 +5,14 @@ import HeroSection from "./hero/HeroSection";
 import ProjectSection from "./projectcardsection/ProjectSection";
 import SkillSection from "./SkillsSection";
 import StorySection from "./StorySection";
+import { Helmet } from "react-helmet";
 function ProfilePage({ projects, storys, skills, jobs }) {
   return (
     <Layout>
-      <title>Home Page</title>
+      <Helmet>
+        <link rel="icon" type="image/svg+xml" href="/profile.png" />
+        <title>Home Page</title>
+      </Helmet> 
       <div>
         <SectionWrapper>
           <HeroSection />

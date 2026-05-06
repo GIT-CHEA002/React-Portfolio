@@ -6,6 +6,7 @@ import DetailSection from "./DetailSection";
 import ProjectImageSection from "./ProjectImageSection";
 import FeedBackSection from "./FeedBackSection";
 import MoreProjectSection from "./MoreProjectSection";
+import { Helmet } from "react-helmet";
 function ProjectDisplay({ projects }) {
   const param = useParams();
   const projectTitle = param.title;
@@ -18,7 +19,10 @@ function ProjectDisplay({ projects }) {
 
   return (
     <Layout>
-      <title>Project Detail</title>
+      <Helmet>
+        <link rel="icon" type="image/svg+xml" href="/projectdetail.png" />
+        <title>Project Details</title>
+      </Helmet>
 
       <SectionWrapper>
         <ProjectHeadingTitle projectDisplay={projectDisplay} />
