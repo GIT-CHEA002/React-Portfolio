@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       <title>Home Page</title>
-      <nav className="fixed top-0 left-0 w-full z-50  bg-white  ">
+      <nav className="sticky top-0 left-0 w-full z-[999] pt-[env(safe-area-inset-top)] bg-white  ">
         <DesktopMenu
           navLinkClass={navLinkClass}
           setMobileMenu={setMobileMenu}
